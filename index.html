@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Live HTML CSS JS Editor with Responsive & SEO UI/UX">
+  <title>HTML/CSS/JS Compiler - Online Code Editor </title>
+  <meta name="description" content="Free online HTML, CSS, and JavaScript live compiler. Instantly write, edit, and preview code with a responsive layout and dark/light theme. Perfect for learners and developers." />
+  <meta name="keywords" content="HTML compiler, CSS editor, JS live editor, online code editor, code playground, web development, responsive code editor, dark theme code editor, learn HTML CSS JavaScript" />
+  <meta name="author" content="Senthil" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourdomain.com/" />
+  
+  <link rel="icon" type="image/png" href="iconlogo.jpg">
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/monokai.min.css">
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Live HTML CSS JS Editor with Responsive & SEO UI/UX">
+    <title>HTML/CSS/JS Compiler - Online Code Editor</title>
+    <meta name="description" content="Free online HTML, CSS, and JavaScript live compiler. Instantly write, edit, and preview code with a responsive layout. Perfect for learners and developers." />
+    <meta name="keywords" content="HTML compiler, CSS editor, JS live editor, online code editor, code playground, web development, responsive code editor" />
+    <meta name="author" content="Senthil" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://yourdomain.com/" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/monokai.min.css">
+</head>
+<body>
+      <header>
+           <img class="logo" src="logo.png" alt="">
+           <h1>CODESTACKS</h1>
+     </header>
+    <div class="container">
+        <div class="header">
+            <h1>HTML, CSS & JS Compiler</h1>
+            <p>See your web code in action instantly!</p>
+        </div>
+    
+        <div class="code-navigation">
+            <button onclick="showEditor('html')" class="active">HTML</button>
+            <button onclick="showEditor('css')">CSS</button>
+            <button onclick="showEditor('js')">JavaScript</button>
+        </div>
+
+        <div class="editor-wrapper">
+            <div id="html-editor-section" class="editor-section active">
+                <h2 class="editor-header">HTML</h2>
+                <div id="html-editor"></div>
+            </div>
+            <div id="css-editor-section" class="editor-section">
+                <h2 class="editor-header">CSS</h2>
+                <div id="css-editor"></div>
+            </div>
+            <div id="js-editor-section" class="editor-section">
+                <h2 class="editor-header">JavaScript</h2>
+                <div id="js-editor"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button onclick="runCode()">Run Code</button>
+        </div>
+
+        <div class="output-section">
+            <h2 class="output-header">Output</h2>
+            <iframe id="output"></iframe>
+        </div>
+
+    <div class="info-section">
+        <h1 class="h1">HTML Online Editor & Compiler</h1>
+        <p>Write, run & share HTML code online using OneCompiler's HTML Code Editor for free. It's robust and feature-rich, running the latest version of HTML5.</p>
+        <p>The editor shows sample boilerplate code and supports styles in <code>&lt;style&gt;</code> tags and scripts in <code>&lt;script&gt;</code> tags within the HTML.</p>
+
+        <h2>About HTML</h2>
+        <p>HTML (Hyper Text Markup Language) is the standard markup language for web pages, created by Tim Berners-Lee in 1991. Almost every website uses HTML.</p>
+
+        <h2>Syntax Help</h2>
+        <ul>
+            <li>Start with <code>&lt;!DOCTYPE html&gt;</code></li>
+            <li>HTML begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code></li>
+            <li>Use <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for headings</li>
+            <li>Wrap text in <code>&lt;p&gt;</code> for paragraphs</li>
+            <li>Links: <code>&lt;a href="..."&gt;</code></li>
+            <li>Images: <code>&lt;img src="..." /&gt;</code></li>
+            <li>Lists: <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> with <code>&lt;li&gt;</code></li>
+        </ul>
+
+        <h2>Example</h2>
+        <pre><code>&lt;a href="https://compiler.zeroday.fun"&gt;HTML Online Compiler&lt;/a&gt;</code></pre>
+
+        <h2>CSS Styling</h2>
+        <p>CSS defines how HTML appears. You can control layout, color, fonts, and responsiveness by including <code>&lt;style&gt;</code> tags within your HTML or linking to external stylesheets (though this editor focuses on inline CSS for simplicity).</p>
+        <pre><code>&lt;style&gt;
+  body {
+    padding: 25px;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+  }
+  .title {
+    color: #228B22;
+    font-family: Candara;
+  }
+&lt;/style&gt;
+&lt;h1 class="title"&gt;Green Title&lt;/h1&gt;
+&lt;p&gt;This is a paragraph with some styling.&lt;/p&gt;
+</code></pre>
+
+        <h2>Tables</h2>
+        <ul>
+            <li><code>&lt;table&gt;</code> - Table container</li>
+            <li><code>&lt;tr&gt;</code> - Table row</li>
+            <li><code>&lt;th&gt;</code> - Table header</li>
+            <li><code>&lt;td&gt;</code> - Table data</li>
+            <li><code>&lt;caption&gt;</code> - Table title</li>
+        </ul>
+
+        <h2>Using JavaScript</h2>
+        <p>Use JavaScript for interactivity in HTML by including <code>&lt;script&gt;</code> tags within your HTML or linking to external scripts (though this editor focuses on inline JS for simplicity).</p>
+        <pre><code>&lt;button onclick="alert('Hello!')"&gt;Click Me&lt;/button&gt;
+&lt;script&gt;
+  function greet() {
+    alert('Hello from JavaScript!');
+  }
+&lt;/script&gt;
+</code></pre>
+
+        <h2>Hosting on Custom Domain</h2>
+        <p>You can host your compiler project at <strong>compiler.zeroday.fun</strong> using GitHub Pages, Vercel, or Netlify by uploading this content.</p>
+    </div>
+    </div>
+
+    <footer>
+        <p>&copy;  Copyright 2025.  <span></span>All right reserved Live Code Editor</p>
+    </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/htmlmixed/htmlmixed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/edit/closebrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/edit/matchbrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/show-hint.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/html-hint.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/css-hint.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/javascript-hint.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/show-hint.min.css">
+
+  <script src="script.js"></script>
+</body>
+</html>
