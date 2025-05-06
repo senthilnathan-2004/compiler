@@ -35,6 +35,10 @@
             justify-content: center;
             background-color: var(--accent-color);
             color: var(--text-color);
+            position: sticky;
+            top: 0px;
+            box-shadow: 0 0 1.5rem var(--primary-color);
+            z-index: 2;   
         }
 
         header h1{
